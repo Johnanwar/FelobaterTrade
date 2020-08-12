@@ -581,6 +581,9 @@ footer .last-footer .social a {
   .home .form-part .close {
     display: none;
   }
+  .many-products .product-card h4 {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
