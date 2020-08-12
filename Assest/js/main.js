@@ -1,22 +1,30 @@
-$("#ViewForm").click(function(){
-    console.log("test")
-    $(".home-parent").toggleClass("hideForm")
-    
+function toggleForm(){
     if($(".home-parent").hasClass("hideForm")){
         $(".form-part").css("visibility" , "visible");
         $(".form-part").css("width" , "30%");
         // $(".form-part").css("display" , "block");
         $(".home-slide").css("width" , "70%");
-        $("#ViewForm").text("Close The Form")
+        $("#ViewForm").css("display" , "none");
         
     }
     else{
         $(".form-part").css("visibility" , "hidden");
         $(".form-part").css("width" , "0%");
         $(".home-slide").css("width" , "100%");
-        $("#ViewForm").text("Order Now")
+        $("#ViewForm").css("display" , "block");
 
      
     }
+
+}
+
+$("#ViewForm").click(function(){
+    $(".home-parent").addClass("hideForm")
+    toggleForm();
+ 
+})
+$(".close").click(function(){
+    $(".home-parent").removeClass("hideForm")
+    toggleForm();
  
 })

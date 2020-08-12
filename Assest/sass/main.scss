@@ -119,6 +119,7 @@ nav {
 
 // .................................................................................
 .home {
+    height: 400px;
     #ViewForm{
         background-color:$main-color;
         z-index: 99;
@@ -137,6 +138,11 @@ nav {
       height: 400px;
   }
     .form-part {
+        .close{
+            color: red!important;
+            opacity: 1;
+            cursor: pointer;
+        }
         border: 1px solid #d8cfcf;
         padding: 10px 10px 0 10px;
         // float: left;

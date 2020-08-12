@@ -154,6 +154,10 @@ nav i:hover {
   color: #2b358f;
 }
 
+.home {
+  height: 400px;
+}
+
 .home #ViewForm {
   background-color: #2b358f;
   z-index: 99;
@@ -179,6 +183,12 @@ nav i:hover {
   visibility: hidden;
   -webkit-transition: visibility 0s, width .4s;
   transition: visibility 0s, width .4s;
+}
+
+.home .form-part .close {
+  color: red !important;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .home .form-part label {
