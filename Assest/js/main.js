@@ -28,3 +28,13 @@ $(".close").click(function(){
     toggleForm();
  
 })
+
+function mobileNav() {
+    $("#togglmenu").click(function () {
+        $(".mobile-nav-content").css("right", "0");
+    })
+    $("#closemenu").click(function () {
+        $(".mobile-nav-content").css("right", "-1000px");
+    })
+}
+mobileNav()

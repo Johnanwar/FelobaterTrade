@@ -1,43 +1,87 @@
-
 @media screen and (max-width: 668px) {
-        .welcome-text .welcom-img::after{
+    .sesctop-nav {
         display: none;
     }
 
-    .home-panner {
-        .panner-text {
+    .mobile-nav {
+        display: block;
 
-            right: 10%;
-            max-width: 80%;
-            text-align: center;
+        .nav-head {
+            background-color: #fff;
+            padding: 10px 30px;
+            font-size: 25px;
+            border-bottom: 1px solid #ccc;
+
+        }
+
+        .logo {
+            width: 106px;
+            height: 76px;
+        }
+
+        .mobile-nav-content {
+            position: fixed;
+            top: 0;
+            right: -1000px;
+            background-color: white;
+            z-index: 9999999999999999999;
+            width: 100vw;
+            transition: 1s;
+            height: 80vh;
+
+            li {
+                padding: 15px;
+
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: bold;
+
+                a {
+                    text-decoration: underline;
+                    color: #000;
+                }
+            }
+
+        }
+
+
+    }
+
+    .home {
+        height: initial;
+
+        .slider-part {
+            flex-direction: column-reverse;
+          }
+
+        .home-slide {
+            height: 300px;
+            img {
+                height: 300px;
+            }
+        }
+
+        #ViewForm {
+            display: none;
+        }
+
+        .form-part {
+            width: 100%;
+            visibility: visible;
+            margin-top: 10px;
+
+            .close {
+                display: none;
+            }
         }
     }
-    .find-church {
-        padding: 10px 0;
-    }
-    .login .login-form {
-        width: 90%;
-    }
-    .home-panner  {
-     .form-search{
-        padding: 0px 20px;
-        .btn-reserve{
-            margin-top: 0px;
-        }
-     }
-    }
-    nav{
-        padding: 5px!important;
-    }
-    .contact-request-form{
-        width: 100%!important;
-    }
-    .navbar-light .navbar-toggler {
-        color: rgb(255, 189, 17);
-        border-color: rgb(255, 189, 17);
-    }
+
+
+
+
 }
-@media (min-width: 1200px){
+
+@media (min-width: 1200px) {
     .container {
         max-width: 90%;
     }

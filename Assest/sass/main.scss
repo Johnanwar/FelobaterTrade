@@ -13,7 +13,9 @@
 .third-color {
     color: $third-color;
 }
-
+.mobile-nav {
+    display: none;
+}
 nav {
 
     background-color: #fff;
@@ -476,5 +478,6 @@ footer{
         }
 
     }
-  
 }
+// ...........................................
+@import "media-query";
